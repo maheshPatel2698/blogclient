@@ -1,0 +1,21 @@
+#burger {
+  display: none;
+}
+
+#sidebar {
+  display: none;
+  transition: all 0.15s;
+}
+@media (max-width: 800px) {
+  #burger {
+    display: block;
+  }
+  #sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 9rem;
+    height: auto;
+  }
+}
