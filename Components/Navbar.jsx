@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <div className='relative top-0 left-0 w-full h-14  flex justify-between items-center gap-3  max-md:shadow-md rounded-full max-md:w-3/4 m-auto max-md:flex-col max-md:h-auto'>
             <div className="left  shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
-                <span className=' p-2 cursor-pointer font-bold text-purple-700'>
+                <span className=' p-1 cursor-pointer font-bold text-purple-700'>
                     BlogoForCoder
 
                 </span>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
             </div>
-            <div ref={sidebarRef} id={styles.sidebar} className=" shadow-md sidebar absolute top-20 -right-16 flex justify-center items-center flex-col w-36 h-auto transform-translate scale-0 ">
+            <div ref={sidebarRef} id={styles.sidebar} className=" shadow-md sidebar absolute top-20 -right-10 flex justify-center items-center flex-col w-36 h-auto transform-translate scale-0 ">
                 <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>About Us</span>
                 <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>Blogs</span>
                 <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>Contact</span>
