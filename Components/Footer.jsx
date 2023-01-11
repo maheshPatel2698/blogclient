@@ -3,7 +3,7 @@ import { AiOutlineFacebook, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineInstag
 
 const Footer = () => {
     return (
-        <div className='w-full mt-2 border-t-2 border-purple-700  shadow-md shadow-purple-500   h-auto p-1 relative bottom-0 left-0 grid grid-cols-3 gap-2 place-items-center max-md:grid-cols-2 max-sm:flex justify-center items-center flex-col  '>
+        <div className='w-full mt-2 border-t-2 border-purple-700  h-auto p-1 relative bottom-0 left-0 grid grid-cols-3 gap-2 place-items-center max-md:grid-cols-2 max-sm:flex justify-center items-center flex-col  '>
 
             {/* footer's Header section */}
             <div className=' col-span-3 z-10 flex justify-center items-center max-md:flex-col'>
