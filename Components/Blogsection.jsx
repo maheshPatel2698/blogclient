@@ -70,14 +70,14 @@ const Blogsection = () => {
             <div className='blogsection grid grid-cols-3 grid-rows-2 place-items-center max-lg:grid-cols-1  max-lg:p-3'>
                 {blogTopics.slice(0, 6).map((blog, index) => {
                     return (
-                        <div key={index} className="tpoic-card m-2 max-lg:w-full w-96 p-3 shadow-md shadow-purple-600">
+                        <div key={index} className="tpoic-card rounded-lg m-2 max-lg:w-full w-96 p-3 shadow-md shadow-purple-600">
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-xl'>
                                 <span className='font-bold text-purple-700 ml-2'>{blog.topic}</span>
                                 <span className='flex justify-center items-center gap-2 mr-1 font-bold text-purple-700'><GrReactjs size={25} /> 19</span>
                             </div>
                             {/* Image section */}
-                            <div className="Image section  max-sm:w-auto flex justify-center items-center w-80 h-80  m-auto  ">
+                            <div className="Image section  max-sm:w-80 flex justify-center items-center w-80 h-80  m-auto  ">
                                 <Image src={blog?.image} className="w-full h-auto " />
                             </div>
                             <div className="about-card mt-2">
