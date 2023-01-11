@@ -32,22 +32,25 @@ const Navbar = () => {
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>About Us</span>
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Blogs</span>
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Contact</span>
+                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Services</span>
             </div>
-            <div className="right flex shadow-md max-md:shadow-none rounded-full h-full justify-around items-center font-bold w-6/12">
+            <div className="right z-10 flex shadow-md max-md:shadow-none rounded-full h-full justify-around items-center font-bold w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Sign Up</span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Login</span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
             </div>
-            <div ref={sidebarRef} id={styles.sidebar} className=" shadow-md sidebar absolute top-20 -right-10 flex justify-center items-center flex-col w-36 h-auto transform-translate scale-0 ">
-                <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>About Us</span>
-                <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>Blogs</span>
-                <span className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>Contact</span>
+            <div ref={sidebarRef} id={styles.sidebar} className="rounded-3xl z-20 bg-purple-300 sidebar absolute top-20 -right-10 flex justify-center items-center flex-col w-full h-auto transform-translate scale-0 ">
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>About Us</span>
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>Blogs</span>
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>Contact</span>
+                <span className='cursor-pointer hover:text-white transition-all duration-300 m-2'>Services</span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Sign Up</span>
-                <span className='  m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>Login</span>
-                <span className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
-                <span className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
+                <span className='  m-2 cursor-pointer hover:text-white transition-all duration-300'>Login</span>
+                <span className='m-2  cursor-pointer hover:text-white transition-all duration-300'><AiOutlineUser size={26} /></span>
+                <span className='m-2  cursor-pointer  transition-all duration-300'><BsMoonFill size={26} /></span>
+
             </div>
         </div>
     )
