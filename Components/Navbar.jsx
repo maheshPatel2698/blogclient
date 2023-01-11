@@ -48,18 +48,30 @@ const Navbar = () => {
                     <Link href="signup">Sign Up</Link>
                 </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
-                    <Link href='/login'>Log In</Link>
+                    <Link href='/login'>Login</Link>
                 </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
             </div>
             <div ref={sidebarRef} id={styles.sidebar} className="rounded-3xl z-20 bg-purple-300 sidebar absolute top-20 -right-10 flex justify-center items-center flex-col w-full h-auto transform-translate scale-0 ">
-                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>About Us</span>
-                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>Blogs</span>
-                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>Contact</span>
-                <span className='cursor-pointer hover:text-white transition-all duration-300 m-2'>Services</span>
-                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Sign Up</span>
-                <span className='  m-2 cursor-pointer hover:text-white transition-all duration-300'>Login</span>
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>
+                    <Link href='/about'>About Us</Link>
+                </span>
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>
+                    <Link href='/blogs'>Blogs</Link>
+                </span>
+                <span className='m-2 cursor-pointer hover:text-white transition-all duration-300'>
+                    <Link href='/contact'>Contact</Link>
+                </span>
+                <span className='cursor-pointer hover:text-white transition-all duration-300 m-2'>
+                    <Link href='/services'>Services</Link>
+                </span>
+                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    Sign Up <Link href="/signup">Sgn Up</Link>
+                </span>
+                <span className='  m-2 cursor-pointer hover:text-white transition-all duration-300'>
+                    <Link href='/login'>Login</Link>
+                </span>
                 <span className='m-2  cursor-pointer hover:text-white transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='m-2  cursor-pointer  transition-all duration-300'><BsMoonFill size={26} /></span>
 

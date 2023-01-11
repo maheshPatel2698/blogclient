@@ -5,3 +5,6 @@
 body {
   font-weight: 600;
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
