@@ -12,6 +12,7 @@ import nodejs from "../public/nodejs.png"
 import expressjs from '../public/expressjs.png'
 import mongo from "../public/mongodb.png"
 import python from "../public/python.png"
+
 const Blogsection = () => {
 
     const blogTopics = [
@@ -67,10 +68,10 @@ const Blogsection = () => {
     return (
         <div>
             <div className='text-4xl  text-center m-2 text-purple-700 font-bold  '>Topics</div>
-            <div className='blogsection grid grid-cols-3 grid-rows-2 place-items-center max-lg:grid-cols-1  max-lg:p-3'>
+            <div className='blogsection grid grid-cols-3 grid-rows-2 place-items-center max-xl:grid-cols-2 max-md:grid-cols-1'>
                 {blogTopics.slice(0, 6).map((blog, index) => {
                     return (
-                        <div key={index} className="tpoic-card rounded-lg m-2 max-lg:w-full w-96 p-3 shadow-md shadow-purple-600">
+                        <div key={index} className="tpoic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md shadow-purple-600">
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-xl'>
                                 <span className='font-bold text-purple-700 ml-2'>{blog.topic}</span>
@@ -78,7 +79,7 @@ const Blogsection = () => {
                             </div>
                             {/* Image section */}
                             <div className="Image section  max-sm:w-80 flex justify-center items-center w-80 h-80  m-auto  ">
-                                <Image src={blog?.image} className="w-full h-auto " />
+                                <Image priority src={blog?.image} className="w-full h-auto " />
                             </div>
                             <div className="about-card mt-2">
                                 <p className='text-purple-900 font-semibold text-center text-xl h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 200)}... ...</p>
