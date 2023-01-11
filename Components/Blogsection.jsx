@@ -78,7 +78,7 @@ const Blogsection = () => {
                                 <span className='flex justify-center items-center gap-2 mr-1 font-bold text-purple-700'><GrReactjs size={25} /> 19</span>
                             </div>
                             {/* Image section */}
-                            <div className="Image section  max-sm:w-80 flex justify-center items-center w-80 h-80  m-auto  ">
+                            <div className="Image section max-md:w-80 max-sm:w-60 flex justify-center items-center w-80 h-80  m-auto  ">
                                 <Image priority src={blog?.image} className="w-full h-auto " />
                             </div>
                             <div className="about-card mt-2">
