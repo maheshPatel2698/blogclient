@@ -3,7 +3,7 @@ import { AiOutlineUser } from "react-icons/ai"
 import { BsMoonFill } from "react-icons/bs"
 import { GiHamburgerMenu } from "react-icons/gi"
 import styles from "../styles/Navbar.module.css"
-
+import Link from "next/link"
 const Navbar = () => {
 
     const sidebarRef = useRef()
@@ -24,20 +24,32 @@ const Navbar = () => {
         <div className='relative top-0 left-0 w-full h-14  flex justify-between items-center gap-3  max-md:shadow-md rounded-full max-md:w-3/4 m-auto max-md:flex-col max-md:h-auto'>
             <div className="left  shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
                 <span className=' p-1 cursor-pointer font-bold text-purple-700'>
-                    BlogoForCoder
+                    <Link href='/'>BlogoForCoder</Link>
 
                 </span>
             </div>
             <div className="max-md:hidden mid flex shadow-md rounded-full h-full justify-around items-center font-bold  w-full">
-                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>About Us</span>
-                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Blogs</span>
-                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Contact</span>
-                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>Services</span>
+                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/about'>About Us</Link>
+                </span>
+                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/blogs'>Blogs</Link>
+                </span>
+                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/contact'>Contact Us</Link>
+                </span>
+                <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/services'>Services</Link>
+                </span>
             </div>
-            <div className="right z-10 flex shadow-md max-md:shadow-none rounded-full h-full justify-around items-center font-bold w-6/12">
+            <div className="right  flex shadow-md max-md:shadow-none rounded-full h-full justify-around items-center font-bold w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
-                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Sign Up</span>
-                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>Login</span>
+                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href="signup">Sign Up</Link>
+                </span>
+                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/login'>Log In</Link>
+                </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
             </div>
