@@ -32,10 +32,10 @@ const Servicesection = () => {
     return (
         <>
             <div className='text-4xl  text-center m-2 text-purple-700 font-bold'>Our Services</div>
-            <div className=' w-full grid grid-cols-1 grid-rows-4 p-2 '>
+            <div className=' w-full grid grid-cols-1 grid-rows-4 p-2 max-lg:place-items-center '>
                 {services.map((service, index) => {
                     return (
-                        <div key={index} className="service-card max-md:grid-cols-1 max-md:h-auto w-auto h-auto m-2 shadow-sm shadow-purple-700 grid grid-cols-3 gap-2 p-2 ">
+                        <div key={index} className="service-card max-lg:grid-cols-1 max-lg:w-3/4 max-md:w-3/4  max-md:h-auto w-auto h-auto m-2 shadow-sm shadow-purple-700 grid grid-cols-3 gap-2 p-2 ">
                             <div className="left-section-information col-span-2 ">
                                 <h4 className='text-2xl text-center font-bold text-purple-700'>{service?.title}</h4>
                                 <p className='text-xl max-md:text-base capitalize h-40 max-md:h-auto flex justify-center items-center text-center'>{service?.content.slice(0, 550)}...</p>
