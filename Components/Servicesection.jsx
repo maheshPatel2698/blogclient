@@ -46,7 +46,7 @@ const Servicesection = () => {
                                 </div>
                             </div>
 
-                            <div className="right-section-image w-80 h-56 m-auto  col-span-1 flex justify-center items-center">
+                            <div className="right-section-image max-md:w-full max-md:h-full max-sm:w-full w-80 h-56 m-auto col-span-1 flex justify-center items-center max-md:m-auto">
                                 <Image src={service?.image} className="w-full h-auto " />
                             </div>
                         </div>
