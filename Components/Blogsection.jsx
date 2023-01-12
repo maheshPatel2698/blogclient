@@ -82,7 +82,7 @@ const Blogsection = () => {
                                 <Image priority src={blog?.image} className="w-full h-auto " />
                             </div>
                             <div className="about-card mt-2">
-                                <p className='text-purple-900 font-semibold text-center text-xl h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 200)}... ...</p>
+                                <p className='text-purple-900 font-semibold text-center text-xl h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
                                 <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>View Blogs <AiOutlineArrowRight size={20} /></button>
