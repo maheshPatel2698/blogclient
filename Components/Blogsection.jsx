@@ -12,7 +12,7 @@ import nodejs from "../public/nodejs.png"
 import expressjs from '../public/expressjs.png'
 import mongo from "../public/mongodb.png"
 import python from "../public/python.png"
-
+import Link from 'next/link'
 const Blogsection = () => {
 
     const blogTopics = [
@@ -79,14 +79,14 @@ const Blogsection = () => {
                             </div>
                             {/* Image section */}
                             <div className="Image section max-md:w-80 max-sm:w-60 flex justify-center items-center w-80 h-80  m-auto  ">
-                                <Image priority src={blog?.image} className="w-full h-auto " />
+                                <Image priority src={blog?.image} className="w-full h-auto" alt="blog image" />
                             </div>
                             <div className="about-card mt-2">
                                 <p className='text-purple-900 font-semibold text-center text-xl h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>View Blogs <AiOutlineArrowRight size={20} /></button>
-
+                                <Link href={`blogs/${blog?.topic}`}> <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>
+                                    View Blogs <AiOutlineArrowRight size={20} /> </button></Link>
                             </div>
 
                         </div>
@@ -94,7 +94,10 @@ const Blogsection = () => {
                 })}
             </div>
             <div className=" flex justify-center items-center">
-                <button className='font-bold text-md flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-full p-3 m-2 text-black shadow-purple-600 '>View All Blogs<AiOutlineArrowRight size={20} /></button>
+
+                <Link href='/blogs' className='w-full'> <button className='font-bold text-md flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-full p-3 m-2 text-black shadow-purple-600 '>
+                    View All Blogs<AiOutlineArrowRight size={20} /> </button></Link>
+
             </div>
         </div>
     )
