@@ -9,6 +9,7 @@ const Footer = () => {
             <div className=' col-span-3 flex justify-center items-center max-md:flex-col'>
                 <span className=' z-10 text-xl font-bold cursor-pointer flex justify-center gap-2 items-center text-purple-700 p-2'>BlogoForCoder.com </span>
             </div>
+
             {/* sitemap section */}
             <div className='sitemap  text-xl w-56 max-md:cols-span-1 max-md:shadow-purple-500 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center max-sm:w-full '>
                 <span className=' cursor-pointer hover:text-purple-700 text-2xl  transition-all duration-300'>Sitemap</span>
