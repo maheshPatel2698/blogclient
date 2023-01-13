@@ -38,7 +38,7 @@ const Servicesection = () => {
                         <div key={index} className="service-card max-lg:grid-cols-1 max-lg:w-3/4 max-md:w-3/4  max-md:h-auto w-auto h-auto m-2 shadow-sm shadow-purple-700 grid grid-cols-3 gap-2 p-2 ">
                             <div className="left-section-information col-span-2 ">
                                 <h4 className='text-2xl text-center font-bold text-purple-700'>{service?.title}</h4>
-                                <p className='text-xl max-md:text-base capitalize h-40 max-md:h-auto flex justify-center items-center text-center'>{service?.content.slice(0, 550)}...</p>
+                                <p className='text-lg max-md:text-base capitalize h-40 max-md:h-auto flex justify-center items-center text-center'>{service?.content.slice(0, 550)}...</p>
                                 <div className="button-section relative left-0 bottom-0 flex justify-around items-center ">
                                     <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 max-md:text-sm '>Book An Call </button>
                                     <button className='font-bold flex  justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 max-md:text-sm max-md:h-auto'>View More About Service  <AiOutlineArrowRight size={20} /> </button>

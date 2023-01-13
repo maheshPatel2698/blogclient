@@ -24,13 +24,13 @@ const Navbar = () => {
 
     return (
         <div className='sticky top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3 max-md:bg-white max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
-            <div className="left shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
+            <div className="left backdrop-blur-md bg-white/50 shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
                 <span onClick={tggleSidebar} className=' p-1 cursor-pointer font-bold text-purple-700'>
                     <Link href='/'>BlogoForCoder</Link>
 
                 </span>
             </div>
-            <div className="max-md:hidden backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
+            <div className="max-md:hidden backdrop-blur-md  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>
                 </span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Link href='/services'>Services</Link>
                 </span>
             </div>
-            <div className="right backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            <div className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="signup">Sign Up</Link>
