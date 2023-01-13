@@ -30,7 +30,7 @@ const Navbar = () => {
 
                 </span>
             </div>
-            <div className="max-md:hidden backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold mid flex shadow-md rounded-full h-full justify-around items-center  w-full">
+            <div className="max-md:hidden backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>
                 </span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Link href='/services'>Services</Link>
                 </span>
             </div>
-            <div className="right backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold flex shadow-md max-md:shadow-none rounded-full h-full justify-around items-center  w-6/12">
+            <div className="right backdrop-blur-sm  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="signup">Sign Up</Link>
