@@ -68,7 +68,7 @@ const Blogs = () => {
             </div>
             <div className='blogs-section  w-full h-full p-2  grid grid-cols-1'>
                 <div className="blog-card-section flex justify-center items-center flex-col ">
-                    <span className='p-1 cursor-pointer col-span-4 font-bold text-purple-700 text-xl'>Tag-ReactJs</span>
+                    <span className='p-1 cursor-pointer m-3 col-span-4 font-bold text-purple-700 text-xl'>Tag-ReactJs</span>
                     <div className="main-card-section grid grid-cols-4 place-items-center gap-5">
 
                         <div className="blog card rounded-2xl  shadow-md shadow-purple-700 w-80 p-2 col-span-1 max-xl:col-span-2 max-xl:w-full  max-md:w-4/5 max-md:col-span-4  ">
@@ -100,7 +100,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div className="blog-card-section flex justify-center items-center flex-col ">
-                    <span className='p-1 cursor-pointer col-span-4 font-bold text-purple-700 text-xl'>Tag-ReactJs</span>
+                    <span className='p-1 cursor-pointer m-3 col-span-4 font-bold text-purple-700 text-xl'>Tag-ReactJs</span>
                     <div className="main-card-section grid grid-cols-4 place-items-center gap-5">
 
                         <div className="blog card rounded-2xl  shadow-md shadow-purple-700 w-80 p-2 col-span-1 max-xl:col-span-2 max-xl:w-full  max-md:w-4/5 max-md:col-span-4  ">
