@@ -95,7 +95,7 @@ const Blogsection = () => {
             </div>
             <div className=" flex justify-center items-center">
 
-                <Link href='/blogs' className='w-full'> <button className='font-bold text-md flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-full p-3 m-2 text-black shadow-purple-600 '>
+                <Link href='/blogs' className='w-full'> <button className='font-bold text-md flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-full p-3 text-black shadow-purple-600 '>
                     View All Blogs<AiOutlineArrowRight size={20} /> </button></Link>
 
             </div>
