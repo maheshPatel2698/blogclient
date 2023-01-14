@@ -26,7 +26,7 @@ const Title = () => {
                 </div>
 
             </div>
-            <div className="blog-content-section flex justify-center items-center flex-col" >
+            <div className="blog-content-section flex justify-center items-center flex-col m-3" >
                 <p className='text-justify m-3 w-3/5 h-auto max-lg:w-full max-lg:indent-8 max-lg:p-2' >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consequuntur iusto, saepe facilis tenetur voluptatum id culpa nulla quo tempora perferendis, voluptas architecto voluptatem eligendi dolorem nisi, animi ratione. Commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque, in minima, nemo repellat tempora quo quaerat velit neque ullam illo id obcaecati voluptatibus similique voluptates qui consequatur reprehenderit delectus! Provident quod aspernatur iure at id, debitis fugit necessitatibus quibusdam assumenda. Qui sunt sed aut labore neque vero odio fugit.
                 </p>

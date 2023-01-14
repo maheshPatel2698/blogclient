@@ -4,7 +4,7 @@ import { BsMoonFill } from "react-icons/bs"
 import { GiHamburgerMenu } from "react-icons/gi"
 import styles from "../styles/Navbar.module.css"
 import Link from "next/link"
-
+import { motion } from 'framer-motion'
 const Navbar = () => {
 
     const sidebarRef = useRef()
@@ -27,7 +27,6 @@ const Navbar = () => {
             <div className="left backdrop-blur-md bg-white/50 shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
                 <span onClick={tggleSidebar} className=' p-1 cursor-pointer font-bold text-purple-700'>
                     <Link href='/'>BlogoForCoder</Link>
-
                 </span>
             </div>
             <div className="max-md:hidden backdrop-blur-md  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">

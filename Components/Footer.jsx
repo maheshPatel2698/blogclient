@@ -1,5 +1,11 @@
 import React from 'react'
-import { AiOutlineFacebook, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineInstagram, AiOutlineCopyrightCircle } from "react-icons/ai"
+import {
+    AiOutlineFacebook,
+    AiOutlineLinkedin,
+    AiOutlineTwitter,
+    AiOutlineInstagram,
+    AiOutlineCopyrightCircle
+} from "react-icons/ai"
 
 const Footer = () => {
     return (
@@ -7,11 +13,11 @@ const Footer = () => {
 
             {/* footer's Header section */}
             <div className=' col-span-3 flex justify-center items-center max-md:flex-col'>
-                <span className=' z-10 text-lg font-bold cursor-pointer flex justify-center gap-2 items-center text-purple-700 p-2'>BlogoForCoder.com </span>
+                <span className=' z-10 text-md font-bold cursor-pointer flex justify-center gap-2 items-center text-purple-700 p-2'>BlogoForCoder.com </span>
             </div>
 
             {/* sitemap section */}
-            <div className='sitemap  text-lg w-56 max-md:cols-span-1 max-md:shadow-purple-500 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center max-sm:w-full '>
+            <div className='sitemap  text-md w-56 max-md:cols-span-1 max-md:shadow-purple-500 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center max-sm:w-full '>
                 <span className=' cursor-pointer hover:text-purple-700 text-2xl  transition-all duration-300'>Sitemap</span>
                 <span className=' cursor-pointer hover:text-purple-700  transition-all duration-300'>About Us</span>
                 <span className='cursor-pointer hover:text-purple-700  transition-all duration-300'>Contact Us</span>
@@ -20,7 +26,7 @@ const Footer = () => {
             </div>
 
             {/* socialmedia section */}
-            <div className='socialmedia  text-lg w-56 max-md:col-span-1 max-md:shadow-purple-500 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center  max-sm:w-full'>
+            <div className='socialmedia  text-md w-56 max-md:col-span-1 max-md:shadow-purple-500 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center  max-sm:w-full'>
                 <span className=' cursor-pointer hover:text-purple-700 text-2xl transition-all duration-300'>Social</span>
                 <span className=' cursor-pointer hover:text-purple-700  transition-all duration-300 flex justify-center items-center'><AiOutlineLinkedin size={28} /> Linkedin</span>
                 <span className=' cursor-pointer hover:text-purple-700  transition-all duration-300 flex justify-center items-center'><AiOutlineFacebook size={28} />Facebook </span>
@@ -29,7 +35,7 @@ const Footer = () => {
             </div>
 
             {/* services */}
-            <div className='Services  text-lg max-md:shadow-purple-500 w-60 p-2 max-md:col-span-3 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center  max-sm:w-full '>
+            <div className='Services  text-md max-md:shadow-purple-500 w-60 p-2 max-md:col-span-3 flex h-44 shadow-md justify-center items-start flex-col max-md:items-center  max-sm:w-full '>
                 <span className=' cursor-pointer hover:text-purple-700 text-2xl transition-all duration-300'>Services</span>
                 <span className=' cursor-pointer hover:text-purple-700  transition-all duration-300 flex justify-center items-center'> Front End Development</span>
                 <span className=' cursor-pointer hover:text-purple-700  transition-all duration-300 flex justify-center items-center'>Back End Development </span>
@@ -39,8 +45,8 @@ const Footer = () => {
 
             {/* copyrightsection */}
             <div className=' col-span-3 z-10 flex justify-center items-center max-md:flex-col'>
-                <span className='max-md:text-sm z-10 text-lg cursor-pointer flex justify-center gap-2 items-center text-gray-400 p-2'>Copyright <AiOutlineCopyrightCircle /> Blogoforcoder.com </span>
-                <span className='max-md:text-sm z-10 text-lg cursor-pointer flex justify-center  items-center text-gray-400 p-2'>
+                <span className='max-md:text-sm z-10 text-md cursor-pointer flex justify-center gap-2 items-center text-gray-400 p-2'>Copyright <AiOutlineCopyrightCircle /> Blogoforcoder.com </span>
+                <span className='max-md:text-sm z-10 text-md cursor-pointer flex justify-center  items-center text-gray-400 p-2'>
                     All Rights Reserved
                 </span>
             </div>
