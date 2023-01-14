@@ -23,12 +23,12 @@ const Navbar = () => {
     }
 
     return (
-        <div className='sticky  top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3 max-md:bg-white max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
+        <div className='sticky max-sm:gap-0 top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3 max-md:bg-white max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
             {/* left section */}
             <div
 
                 className="left backdrop-blur-md bg-white/50 shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
-                <span onClick={tggleSidebar} className=' p-1 cursor-pointer font-bold text-purple-700'>
+                <span onClick={tggleSidebar} className=' p-1 max-sm:text-xl cursor-pointer font-bold text-purple-700'>
                     <Link href='/'>BlogoForCoder</Link>
                 </span>
             </div>
