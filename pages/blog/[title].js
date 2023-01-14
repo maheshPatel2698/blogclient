@@ -8,7 +8,6 @@ import Image from "next/image"
 
 const Title = () => {
     const router = useRouter()
-    const data = 'lorem <b>ipsum</b>';
     return (
         <div className='mt-2'>
             <div className="blog-title  w-auto">
@@ -54,7 +53,7 @@ const Title = () => {
                 <div className="comments  p-2 mt-2 flex justify-center items-center flex-col">
                     {/* usercomments  */}
                     <div className="user-comment h-auto m-2 shadow-md rounded-xl shadow-purple-700 w-2/5 grid grid-cols-3 p-2 max-lg:w-auto max-lg:h-60">
-                        <div className="user-image m-auto  col-span-1 w-16 h-16 rounded-full shadow-sm shadow-gray-500">
+                        <div className="user-image m-auto  col-span-1 max-lg:h-16 max-lg:w-16 w-20 h-20 rounded-full shadow-sm shadow-gray-500">
                             <Image src={computer} className="w-full h-full rounded-full" />
                         </div>
                         <div className="user-details   col-span-2 flex justify-start items-start flex-col gap-2">

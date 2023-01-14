@@ -93,7 +93,7 @@ const Blogsection = () => {
                                     priority src={blog?.image} className="w-full h-auto" alt="blog image" />
                             </div>
                             <div className="about-card mt-2">
-                                <p className='text-purple-600 indent-8 font-semibold text-justify text-lg h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
+                                <p className=' indent-8 font-semibold text-justify text-lg h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
                                 <Link href={`blogs/${blog?.topic}`}> <button className='font-semibold  flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-500 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import computer from "../public/computer.jpg"
 import { useTypewriter } from 'react-simple-typewriter'
-import { motion } from "framer-motion"
+
 const Homesection = () => {
     const [text, count] = useTypewriter({
         words: ["Let Get Started!!", "Let's Code!!"],
@@ -12,7 +12,7 @@ const Homesection = () => {
 
     })
     return (
-        <div className='homesection grid grid-cols-3 gap-5 h-screen'>
+        <div className='homesection grid grid-cols-3 gap-5'>
             {/* title section */}
             <span className='text-4xl col-span-3 text-center m-2 text-purple-700 font-bold'>Welcome To  Blog For Coder</span>
             {/* introsection */}
