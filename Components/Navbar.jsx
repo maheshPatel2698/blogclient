@@ -23,13 +23,43 @@ const Navbar = () => {
     }
 
     return (
-        <div className='sticky top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3 max-md:bg-white max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
-            <div className="left backdrop-blur-md bg-white/50 shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
+        <div className='sticky  top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3 max-md:bg-white max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
+            {/* left section */}
+            <motion.div
+                initial={{
+                    x: -500,
+                    opacity: 0,
+                    scale: 0.5
+                }}
+                animate={{
+                    x: 0,
+                    opacity: 1,
+                    scale: 1
+                }}
+                transition={{
+                    duration: 1
+                }}
+                className="left backdrop-blur-md bg-white/50 shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
                 <span onClick={tggleSidebar} className=' p-1 cursor-pointer font-bold text-purple-700'>
                     <Link href='/'>BlogoForCoder</Link>
                 </span>
-            </div>
-            <div className="max-md:hidden backdrop-blur-md  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
+            </motion.div>
+            {/* mid section */}
+            <motion.div
+                initial={{
+                    y: -500,
+                    opacity: 0,
+                    scale: 0.5
+                }}
+                animate={{
+                    y: 0,
+                    opacity: 1,
+                    scale: 1
+                }}
+                transition={{
+                    duration: 1.2
+                }}
+                className="max-md:hidden backdrop-blur-md  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>
                 </span>
@@ -42,8 +72,23 @@ const Navbar = () => {
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/services'>Services</Link>
                 </span>
-            </div>
-            <div className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            </motion.div>
+            {/* rightsection */}
+            <motion.div
+                initial={{
+                    x: 500,
+                    opacity: 0,
+                    scale: 0.5
+                }}
+                animate={{
+                    x: 0,
+                    opacity: 1,
+                    scale: 1
+                }}
+                transition={{
+                    duration: 1
+                }}
+                className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="signup">Sign Up</Link>
@@ -53,7 +98,7 @@ const Navbar = () => {
                 </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
-            </div>
+            </motion.div>
             <div ref={sidebarRef} id={styles.sidebar} className="rounded-3xl origin-top  bg-white sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7 ">
                 <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>

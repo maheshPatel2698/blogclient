@@ -13,6 +13,7 @@ import expressjs from '../public/expressjs.png'
 import mongo from "../public/mongodb.png"
 import python from "../public/python.png"
 import Link from 'next/link'
+import { motion } from "framer-motion"
 const Blogsection = () => {
 
     const blogTopics = [
@@ -71,7 +72,15 @@ const Blogsection = () => {
             <div className='blogsection grid grid-cols-3 grid-rows-2 place-items-center max-xl:grid-cols-2 max-md:grid-cols-1'>
                 {blogTopics.slice(0, 6).map((blog, index) => {
                     return (
-                        <div key={index} className="tpoic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md shadow-purple-600">
+                        <motion.div
+                            initial={{
+                                y: -50,
+                                opacity: 0
+                            }}
+                            transition={{ duration: 1 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            key={index} className="topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md shadow-purple-600">
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-lg'>
                                 <span className='font-bold text-purple-600 ml-2'>{blog.topic}</span>
@@ -79,7 +88,9 @@ const Blogsection = () => {
                             </div>
                             {/* Image section */}
                             <div className="Image section max-md:w-56 max-sm:w-56 flex justify-center items-center w-56 h-56  m-auto  ">
-                                <Image priority src={blog?.image} className="w-full h-auto" alt="blog image" />
+                                <Image
+
+                                    priority src={blog?.image} className="w-full h-auto" alt="blog image" />
                             </div>
                             <div className="about-card mt-2">
                                 <p className='text-purple-600 indent-8 font-semibold text-justify text-lg h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
@@ -89,7 +100,7 @@ const Blogsection = () => {
                                     View Blogs <AiOutlineArrowRight size={20} /> </button></Link>
                             </div>
 
-                        </div>
+                        </motion.div>
                     )
                 })}
             </div>
