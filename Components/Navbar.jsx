@@ -74,10 +74,10 @@ const Navbar = () => {
                 <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/contact'>Contact</Link>
                 </span>
-                <span onClick={tggleSidebar} className='cursor-pointer hover:text-purple-700 transition-all duration-300 m-2'>
+                <span onClick={tggleSidebar} className=' m-2 cursor-pointer hover:text-purple-700 transition-all duration-300 m-2'>
                     <Link href='/services'>Services</Link>
                 </span>
-                <span onClick={tggleSidebar} className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                <span onClick={tggleSidebar} className=' m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="/signup"> Sign Up </Link>
                 </span>
                 <span onClick={tggleSidebar} className='  m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
