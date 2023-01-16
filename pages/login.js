@@ -7,7 +7,7 @@ import login1 from '../public/login1.png'
 import { motion } from "framer-motion"
 const login = () => {
     return (
-        <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-300 ">
+        <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-200 ">
             <motion.div
                 initial={{
                     scale: 0,
@@ -20,7 +20,7 @@ const login = () => {
                     opacity: 1
                 }}
                 className="image-class w-72 h-72 rounded-2xl ">
-                <Image src={login1} className="w-full h-full rounded-2xl " />
+                <Image src={login1} className="w-full h-full rounded-2xl " alt="image" />
             </motion.div>
             <motion.div
                 initial={{
