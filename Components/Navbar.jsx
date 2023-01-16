@@ -77,8 +77,8 @@ const Navbar = () => {
                 <span onClick={tggleSidebar} className='cursor-pointer hover:text-purple-700 transition-all duration-300 m-2'>
                     <Link href='/services'>Services</Link>
                 </span>
-                <span onClick={tggleSidebar} className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
-                    Sign Up <Link href="/signup">Sgn Up</Link>
+                <span onClick={tggleSidebar} className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    Sign Up <Link href="/signup"></Link>
                 </span>
                 <span onClick={tggleSidebar} className='  m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/login'>Login</Link>
