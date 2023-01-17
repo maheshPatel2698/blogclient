@@ -3,35 +3,22 @@ import React from 'react'
 import { AiOutlineMail } from "react-icons/ai"
 import { RiLockPasswordLine } from "react-icons/ri"
 import Image from 'next/image'
-import login1 from '../public/login1.png'
+import loginimage from '../public/loginimage.webp'
 import { motion } from "framer-motion"
 const login = () => {
     return (
         <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-200 ">
+
             <motion.div
                 initial={{
-                    scale: 0,
+                    y: -200,
                     opacity: 0.5
                 }}
 
                 transition={{ duration: 1 }}
                 animate={{
-                    scale: 1,
-                    opacity: 1
-                }}
-                className="image-class w-72 h-72 rounded-2xl ">
-                <Image src={login1} className="w-full h-full rounded-2xl " alt="image" />
-            </motion.div>
-            <motion.div
-                initial={{
-                    scale: 0,
-                    opacity: 0.5
-                }}
 
-                transition={{ duration: 1 }}
-                animate={{
-                    top: true,
-                    scale: 1,
+                    y: 0,
                     opacity: 1
                 }}
                 className="signform max-sm:w-full m-2 backdrop-blur-sm bg-white/30 rounded-3xl p-2 max-auto ">
@@ -61,6 +48,20 @@ const login = () => {
                     <button className='flex text-white bg-indigo-500 border-0 py-2 transition-all ease-in duration-200  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>Login</button>
 
                 </div>
+            </motion.div>
+            <motion.div
+                initial={{
+                    x: 200,
+                    opacity: 0.5
+                }}
+
+                transition={{ duration: 1 }}
+                animate={{
+                    x: 0,
+                    opacity: 1
+                }}
+                className="image-class w-72 h-72 rounded-2xl ">
+                <Image src={loginimage} className="w-full h-full rounded-2xl " alt="image" />
             </motion.div>
 
         </div>

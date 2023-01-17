@@ -4,18 +4,19 @@ import { RiLockPasswordLine } from "react-icons/ri"
 import Image from 'next/image'
 import login1 from '../public/login1.png'
 import { motion } from "framer-motion"
+
 const signup = () => {
     return (
         <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-300 ">
             <motion.div
                 initial={{
-                    scale: 0,
+                    y: -200,
                     opacity: 0.5
                 }}
 
                 transition={{ duration: 1 }}
                 animate={{
-                    scale: 1,
+                    y: 0,
                     opacity: 1
                 }}
                 className="image-class w-72 h-72 rounded-2xl ">
@@ -23,14 +24,14 @@ const signup = () => {
             </motion.div>
             <motion.div
                 initial={{
-                    scale: 0,
+                    y: 200,
                     opacity: 0.5
                 }}
 
                 transition={{ duration: 1 }}
                 animate={{
-                    top: true,
-                    scale: 1,
+
+                    y: 0,
                     opacity: 1
                 }}
                 className="signform max-sm:w-full m-2 backdrop-blur-sm bg-white/30 rounded-3xl p-2 max-auto ">

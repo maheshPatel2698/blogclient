@@ -43,17 +43,14 @@ const Navbar = () => {
                     <Link href='/blogs'>Blogs</Link>
                 </span>
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
-                    <Link href='/contact'>Contact Us</Link>
+                    <Link href='/how'>How To...?</Link>
                 </span>
                 <span className='cursor-pointer hover:text-purple-700 transition-all duration-300'>
-                    <Link href='/services'>Services</Link>
+                    <Link href='/contact'>Contact Us</Link>
                 </span>
             </div>
             {/* rightsection */}
-            <div
-
-
-                className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            <div className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="signup">Sign Up</Link>
@@ -72,10 +69,10 @@ const Navbar = () => {
                     <Link href='/blogs'>Blogs</Link>
                 </span>
                 <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
-                    <Link href='/contact'>Contact</Link>
+                    <Link href='/how'>How To...?</Link>
                 </span>
-                <span onClick={tggleSidebar} className='cursor-pointer hover:text-purple-700 transition-all duration-300 m-2'>
-                    <Link href='/services'>Services</Link>
+                <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
+                    <Link href='/contact'>Contact Us</Link>
                 </span>
                 <span onClick={tggleSidebar} className=' m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href="/signup"> Sign Up </Link>
