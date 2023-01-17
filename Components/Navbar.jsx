@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
 
             {/* rightsection */}
-            <div className="right backdrop-blur-md  max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            <div className="right backdrop-blur-md  max-md:w-auto max-md:bg-white/50 text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-700 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <Link href="signup">   <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     Sign Up
@@ -56,7 +56,9 @@ const Navbar = () => {
                 <Link href='/login'>   <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     Login
                 </span></Link>
-                <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
+                <Link href='/profile'>
+                    <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
+                </Link>
                 <span className='max-md:hidden cursor-pointer hover:text-purple-700 transition-all duration-300'><BsMoonFill size={26} /></span>
             </div>
             <div ref={sidebarRef} id={styles.sidebar} className="rounded-3xl origin-top  bg-white sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7 ">
@@ -78,7 +80,9 @@ const Navbar = () => {
                 <span onClick={tggleSidebar} className='  m-2 cursor-pointer hover:text-purple-700 transition-all duration-300'>
                     <Link href='/login'>Login</Link>
                 </span>
-                <span onClick={tggleSidebar} className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} /></span>
+
+                <span onClick={tggleSidebar} className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} />  <Link href='/profile'></Link></span>
+
                 <span onClick={tggleSidebar} className='m-2  cursor-pointer  transition-all duration-300'><BsMoonFill size={26} /></span>
 
             </div>
