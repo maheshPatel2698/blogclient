@@ -81,7 +81,7 @@ const Navbar = () => {
                     <Link href='/login'>Login</Link>
                 </span>
 
-                <span onClick={tggleSidebar} className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><AiOutlineUser size={26} />  <Link href='/profile'></Link></span>
+                <span onClick={tggleSidebar} className='m-2  cursor-pointer hover:text-purple-700 transition-all duration-300'><Link href='/profile'><AiOutlineUser size={26} />  </Link></span>
 
                 <span onClick={tggleSidebar} className='m-2  cursor-pointer  transition-all duration-300'><BsMoonFill size={26} /></span>
 

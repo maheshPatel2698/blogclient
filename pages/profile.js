@@ -6,8 +6,8 @@ import { AiOutlineDelete, AiOutlineMail, AiOutlineUser } from "react-icons/ai"
 import { motion } from 'framer-motion'
 const profile = () => {
     return (
-        <div className='profile border-2 border-black grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto mt-2 h-screen place-items-center bg-purple-300 '>
-            <div className="profile-card-section w-96 h-auto backdrop-blur-sm bg-white/30 rounded-3xl m-3">
+        <div className='profile max-sm:p-2 grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto  mt-2 h-screen place-items-center bg-purple-300 '>
+            <div className="profile-card-section w-96 h-auto backdrop-blur-sm bg-white/30 rounded-3xl m-3 max-sm:w-full max-sm:ml-1 max-sm:mr-1">
                 <div className="user-image flex justify-center items-center flex-col m-3 ">
                     <motion.img
                         initial={{
