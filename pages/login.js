@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const login = () => {
     return (
-        <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-200 ">
+        <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-200 overflow-x-hidden ">
 
             <motion.div
                 initial={{
