@@ -40,7 +40,7 @@ const Title = () => {
             <div className="blog-like-dislike-section flex justify-start items-center relative mt-2 gap-5">
                 <span className='flex justify-center items-center cursor-pointer p-2'><AiOutlineLike size={28} />Like {123}</span>
                 <span className='flex justify-center items-center cursor-pointer p-2'><AiOutlineDislike size={28} />Dislike {101}</span>
-                <div className='absolute right-0 top-2' >Comments {0}</div>
+                <span className='absolute m-2 right-0 top-2' >Comments {0}</span>
             </div>
             <div className="blog-comment-section  mt-2 p-2">
                 <h1 className='text-2xl m-2 text-purple-700 text-center font-bold'>Add Your View </h1>

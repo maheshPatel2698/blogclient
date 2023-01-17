@@ -4,6 +4,7 @@ import { RiLockPasswordLine } from "react-icons/ri"
 import Image from 'next/image'
 import login1 from '../public/login1.png'
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const signup = () => {
     return (
@@ -71,8 +72,11 @@ const signup = () => {
                     <button className='flex text-white bg-indigo-500 border-0 py-2 transition-all ease-in duration-200  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>Signup</button>
 
                 </div>
-            </motion.div>
+                <div className="btn-class flex justify-around items-center flex-row m-2">
+                    <span>Already Have an Account ? <Link className='text-lg font-bold text-slate-700' href="/login">Login</Link></span>
 
+                </div>
+            </motion.div>
         </div>
     )
 }
