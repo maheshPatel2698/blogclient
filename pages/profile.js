@@ -94,83 +94,6 @@ const profile = () => {
                                 <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
                             </div>
                         </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
-                        <div className="blog-card  snap-center  flex justify-center items-center flex-col rounded-3xl border-2 border-purple-700 max-sm:w-auto">
-                            <h3 className="card-title font-bold">How to not to code</h3>
-                            <Image src={user} className="image-class w-32 h-32 " />
-                            <div className="btn-class font-bold flex justify-around items-center m-3">
-                                <button className='bg-indigo-500 gap-2 text-white flex justify-center items-center shadow-md rounded-3xl  px-8 py-2'> Read Blog</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className="saved-blogs-section">
@@ -206,7 +129,6 @@ const profile = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )
