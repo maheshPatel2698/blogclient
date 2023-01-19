@@ -83,7 +83,7 @@ const Blogsection = () => {
                             transition={{ duration: 1 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            key={index} className={`topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md ${theme === "dark" ? "shadow-purple-600" : "shadow-purple-300"}`}>
+                            key={index} className={`topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 ${theme === "dark" ? "shadow-md" : "shadow-sm"} ${theme === "light" ? "shadow-purple-600" : "shadow-purple-300"}`}>
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-lg'>
                                 <span className='font-bold text-[#6461B6] ml-2'>{blog.topic}</span>
@@ -99,7 +99,7 @@ const Blogsection = () => {
                                 <p className=' indent-8 font-semibold text-justify text-lg h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <Link href={`blogs/${blog?.topic}`}> <button className='font-semibold  flex justify-center items-center rounded-full  transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>
+                                <Link href={`blogs/${blog?.topic}`}> <button className={`font-semibold  flex justify-center items-center rounded-full  transition-all ease-in duration-200 bg-[#6461B6] ${theme === "dark" ? "shadow-md" : "shadow-sm"} w-auto p-3 m-2 text-white shadow-purple-600 `}>
                                     View Blogs <AiOutlineArrowRight size={20} /> </button></Link>
                             </div>
 
