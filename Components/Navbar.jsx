@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { AiOutlineUser } from "react-icons/ai"
 import { BsMoonFill } from "react-icons/bs"
 import { BsFillSunFill } from "react-icons/bs"
@@ -10,6 +10,10 @@ import { useTheme } from 'next-themes'
 const Navbar = () => {
     const { theme, setTheme } = useTheme()
     const sidebarRef = useRef()
+    useEffect(() => {
+        console.log(localStorage.getItem('theme'))
+    }, [])
+
 
     const tggleSidebar = () => {
 
@@ -65,7 +69,7 @@ const Navbar = () => {
                 </Link>
                 <span onClick={handleDarkMode} className='max-md:hidden cursor-pointer hover:text-purple-500 transition-all duration-300'>{theme === "dark" ? <BsFillSunFill size={26} /> : <BsMoonFill size={26} />}</span>
             </div>
-            <div ref={sidebarRef} id={styles.sidebar} className={`rounded-3xl origin-top  sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7 ${theme === 'dark' ? "bg-[#252525]" : "bg-white"} `}>
+            <div ref={sidebarRef} id={styles.sidebar} className={`rounded-3xl origin-top  sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7  ${theme === 'dark' ? 'max-lg:bg-[#252525] text-white' : 'max-lg:bg-white text-black'}`}>
                 <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-500 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>
                 </span>

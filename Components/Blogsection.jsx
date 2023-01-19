@@ -83,7 +83,7 @@ const Blogsection = () => {
                             transition={{ duration: 1 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            key={index} className={`topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 ${theme === "dark" ? "shadow-md" : "shadow-sm"} ${theme === "light" ? "shadow-purple-600" : "shadow-purple-300"}`}>
+                            key={index} className={(`topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 ${theme === "dark" ? "shadow-md" : "shadow-sm"} ${theme === "light" ? "shadow-purple-600" : "shadow-purple-300"}`)}>
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-lg'>
                                 <span className='font-bold text-[#6461B6] ml-2'>{blog.topic}</span>

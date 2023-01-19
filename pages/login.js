@@ -6,10 +6,12 @@ import Image from 'next/image'
 import loginimage from '../public/loginimage.webp'
 import { motion } from "framer-motion"
 import Link from 'next/link'
+import { useTheme } from "next-themes"
 
 const login = () => {
+    const { theme } = useTheme()
     return (
-        <div className=" p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen bg-purple-200 overflow-x-hidden ">
+        <div className={` p-2 w-full  flex justify-center max-lg:h-auto items-center max-lg:flex-col h-screen ${theme === "dark" ? 'backdrop-blur-md' : ' bg-purple-300 '} overflow-x-hidden `}>
 
             <motion.div
                 initial={{

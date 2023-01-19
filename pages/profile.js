@@ -4,9 +4,11 @@ import user from "../public/user.webp"
 import { FiEdit } from "react-icons/fi"
 import { AiOutlineDelete, AiOutlineMail, AiOutlineUser } from "react-icons/ai"
 import { motion } from 'framer-motion'
+import { useTheme } from "next-themes"
 const profile = () => {
+    const { theme } = useTheme()
     return (
-        <div className='profile max-sm:p-2 grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto  mt-2 h-auto place-items-center bg-purple-300 '>
+        <div className={`profile max-sm:p-2 grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto  mt-2 h-auto place-items-center ${theme === "dark" ? 'backdrop-blur-md' : ' bg-purple-300 '} `}>
             <div className="profile-card-section w-96 h-auto backdrop-blur-sm bg-white/30 rounded-3xl m-3 max-sm:w-auto max-sm:ml-1 max-sm:mr-1">
                 <div className="user-image flex justify-center items-center flex-col m-3 ">
                     <motion.img
