@@ -6,6 +6,7 @@ import LoadingBar from 'react-top-loading-bar'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Head from 'next/head'
+import { ThemeProvider } from "next-themes"
 
 export default function App({ Component, pageProps, router }) {
   const [user, setUser] = useState(null)
@@ -22,24 +23,25 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <Head>
-        <title>Blog For Coder</title>
-        <meta name="description" content="Welcome To BlogForCoder.com. We are here you to provide some valuable knowlegde about Web Development which we learn through our mistakes and journey and answer some of your question so you can't face the same difficulty that we have faced in our journey...." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Navbar />
-      <LoadingBar
-        color="#9333ea"
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-        shadow
-        waitingTime={500}
-        height={4}
-      />
-      <Component {...pageProps} />
-      <Footer />
+      <ThemeProvider defaultTheme='system' attribute='class'>
+        <Head>
+          <title>Blog For Coder</title>
+          <meta name="description" content="Welcome To BlogForCoder.com. We are here you to provide some valuable knowlegde about Web Development which we learn through our mistakes and journey and answer some of your question so you can't face the same difficulty that we have faced in our journey...." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Navbar />
+        <LoadingBar
+          color="#9333ea"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+          shadow
+          waitingTime={500}
+          height={4}
+        />
+        <Component {...pageProps} />
+        <Footer />
+      </ThemeProvider>
     </>
   )
 

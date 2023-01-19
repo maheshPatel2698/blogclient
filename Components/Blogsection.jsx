@@ -68,7 +68,7 @@ const Blogsection = () => {
     ]
     return (
         <div>
-            <div className='text-4xl  text-justify m-2 text-purple-600 font-bold  '>Topics</div>
+            <div className='text-4xl  text-justify m-2 text-[#6461B6] font-bold  '>Topics</div>
             <div className='blogsection grid grid-cols-3 grid-rows-2 place-items-center max-xl:grid-cols-2 max-md:grid-cols-1'>
                 {blogTopics.slice(0, 6).map((blog, index) => {
                     return (
@@ -83,8 +83,8 @@ const Blogsection = () => {
                             key={index} className="topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md shadow-purple-600">
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-lg'>
-                                <span className='font-bold text-purple-600 ml-2'>{blog.topic}</span>
-                                <span className='flex justify-center items-center gap-2 mr-1 font-bold text-purple-600'><GrReactjs size={25} /> 19</span>
+                                <span className='font-bold text-[#6461B6] ml-2'>{blog.topic}</span>
+                                <span className='flex justify-center items-center gap-2 mr-1 font-bold text-[#6461B6]'><GrReactjs size={25} /> 19</span>
                             </div>
                             {/* Image section */}
                             <div className="Image section max-md:w-56 max-sm:w-56 flex justify-center items-center w-56 h-56  m-auto  ">
@@ -96,7 +96,7 @@ const Blogsection = () => {
                                 <p className=' indent-8 font-semibold text-justify text-lg h-36 max-md:h-30 overflow-y-hidden'>{blog?.about.slice(0, 250)}... </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <Link href={`blogs/${blog?.topic}`}> <button className='font-semibold  flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-500 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>
+                                <Link href={`blogs/${blog?.topic}`}> <button className='font-semibold  flex justify-center items-center rounded-full  transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>
                                     View Blogs <AiOutlineArrowRight size={20} /> </button></Link>
                             </div>
 
@@ -106,7 +106,7 @@ const Blogsection = () => {
             </div>
             <div className=" flex justify-center items-center">
 
-                <Link href='/blogs' className='w-full'> <button className='font-semibold text-md flex justify-center items-center rounded-full max-md:w-4/5 max-md:m-auto hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-full p-3 text-black shadow-purple-600 '>
+                <Link href='/blogs' className='w-full'> <button className='font-semibold text-md flex justify-center items-center rounded-full max-md:w-4/5 max-md:m-auto  transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-full p-3 text-white shadow-purple-600 '>
                     View All Blogs<AiOutlineArrowRight size={20} /> </button></Link>
 
             </div>

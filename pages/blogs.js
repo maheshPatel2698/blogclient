@@ -53,14 +53,14 @@ const Blogs = () => {
             <Blognav />
             <div className="sidebar-blog flex justify-around items-center flex-col z-20 absolute top-0 h-auto  w-28 p-5 ml-2 transform transition-all ease-in duration-300">
                 {/* toggle button */}
-                <button id={styles.toggleButton} onClick={handleToggle} className='toggle-btn absolute top-0 left-0 cursor-pointer z-20 m-2 hidden bg-purple-600 w-24 max-lg:flex justify-between items-center text-white font-bold p-2 rounded-full '>Topics<BsFillPlusCircleFill size={28} /></button>
+                <button id={styles.toggleButton} onClick={handleToggle} className='toggle-btn absolute top-0 left-0 cursor-pointer z-20 m-2 hidden bg-[#6461B6] w-24 max-lg:flex justify-between items-center text-white font-bold p-2 rounded-full '>Topics<BsFillPlusCircleFill size={28} /></button>
 
                 {/* sidebar ref */}
                 <div ref={sidebarBlogref} className="topics transform transition-all ease-in duration-200 max-lg:flex justify-around items-center flex-col ml-1 overflow-y-hidden origin-top scale-0 h-0 p-2 mt-8 max-2xl:hidden">
                     {
                         topics.map((t, index) => {
 
-                            return <span key={index} onClick={handleToggle} className='cursor-pointer m-2 text-center bg-purple-600 w-24 text-white font-bold p-2 rounded-full'>{t}</span>
+                            return <span key={index} onClick={handleToggle} className='cursor-pointer m-2 text-center bg-[#6461B6] w-24 text-white font-bold p-2 rounded-full'>{t}</span>
 
                         })
                     }
@@ -82,7 +82,7 @@ const Blogs = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit facere repellendus delectus aliquam iste fugit quae </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <button onClick={() => router.push(`blog/${'How to Not To code'}`)} className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
+                                <button onClick={() => router.push(`blog/${'How to Not To code'}`)} className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
                             </div>
 
                         </div>
@@ -96,7 +96,7 @@ const Blogs = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit facere repellendus delectus aliquam iste fugit quae </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
+                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
                             </div>
 
                         </div>
@@ -115,7 +115,7 @@ const Blogs = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit facere repellendus delectus aliquam iste fugit quae </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
+                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
                             </div>
 
                         </div>
@@ -128,7 +128,7 @@ const Blogs = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit facere repellendus delectus aliquam iste fugit quae </p>
                             </div>
                             <div className="button-section  flex justify-end items-end ">
-                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-purple-600 shadow-md w-auto p-3 m-2 text-black shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
+                                <button className='font-bold flex justify-center items-center rounded-full hover:text-white transition-all ease-in duration-200 bg-[#6461B6] shadow-md w-auto p-3 m-2 text-white shadow-purple-600 '>Read Blog <AiOutlineArrowRight size={20} /></button>
                             </div>
 
                         </div>
