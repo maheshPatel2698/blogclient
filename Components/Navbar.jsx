@@ -27,7 +27,7 @@ const Navbar = () => {
         setTheme(theme === 'dark' ? "light" : "dark")
     }
     return (
-        <div className='sticky max-sm:bg-[#252525] max-sm:gap-0 top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3  max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto'>
+        <div className={`sticky ${theme === 'dark' ? "bg-[#252525]" : "bg-white"} max-sm:gap-0 top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3  max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto`}>
             {/* left section */}
             <div className="left backdrop-blur-md  shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
                 <span onClick={tggleSidebar} className=' p-1 max-sm:text-xl cursor-pointer font-bold text-[#6461B6]'>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 
             {/* rightsection */}
-            <div className="right   max-md:w-auto  text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            <div className="right max-md:w-auto  text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-500 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <Link href="signup">   <span className='max-md:hidden cursor-pointer hover:text-purple-500 transition-all duration-300'>
                     Sign Up
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </Link>
                 <span onClick={handleDarkMode} className='max-md:hidden cursor-pointer hover:text-purple-500 transition-all duration-300'>{theme === "dark" ? <BsFillSunFill size={26} /> : <BsMoonFill size={26} />}</span>
             </div>
-            <div ref={sidebarRef} id={styles.sidebar} className="rounded-3xl origin-top  sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7 max-sm:bg-[#252525] max-sm:text-white max-md:bg-[#252525] max-md:text-[#6461B6] ">
+            <div ref={sidebarRef} id={styles.sidebar} className={`rounded-3xl origin-top  sidebar absolute top-20 -right-10 flex justify-center shadow-md shadow-purple-700 items-center flex-col w-full h-auto transform-translate scale-0 max-sm:-right-7 ${theme === 'dark' ? "bg-[#252525]" : "bg-white"} `}>
                 <span onClick={tggleSidebar} className='m-2 cursor-pointer hover:text-purple-500 transition-all duration-300'>
                     <Link href='/about'>About Us</Link>
                 </span>
