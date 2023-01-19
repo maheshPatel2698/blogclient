@@ -14,7 +14,10 @@ import mongo from "../public/mongodb.png"
 import python from "../public/python.png"
 import Link from 'next/link'
 import { motion } from "framer-motion"
+import { useTheme } from 'next-themes'
+
 const Blogsection = () => {
+    const { theme } = useTheme()
 
     const blogTopics = [
 
@@ -80,7 +83,7 @@ const Blogsection = () => {
                             transition={{ duration: 1 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            key={index} className="topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md shadow-purple-600">
+                            key={index} className={`topic-card rounded-lg m-2 max-md:w-3/4  w-96 p-3 shadow-md ${theme === "dark" ? "shadow-purple-600" : "shadow-purple-300"}`}>
                             {/*   card title      */}
                             <div className='title flex justify-between items-center mt-2 mb-2 text-lg'>
                                 <span className='font-bold text-[#6461B6] ml-2'>{blog.topic}</span>

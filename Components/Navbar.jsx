@@ -27,9 +27,9 @@ const Navbar = () => {
         setTheme(theme === 'dark' ? "light" : "dark")
     }
     return (
-        <div className={`sticky ${theme === 'dark' ? "bg-[#252525]" : "bg-white"} max-sm:gap-0 top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3  max-md:shadow-md max-md:shadow-purple-600 rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto`}>
+        <div className={`sticky  max-sm:gap-0 top-0 left-0 w-full h-14 z-50 flex justify-between items-center gap-3  max-md:shadow-md max-md:${theme === "dark" ? "shadow-purple-600" : "shadow-purple-300"} rounded-full max-md:w-4/5 m-auto max-md:flex-col max-md:h-auto`}>
             {/* left section */}
-            <div className="left backdrop-blur-md  shadow-md rounded-full h-full flex justify-around items-center  w-6/12 max-md:shadow-none">
+            <div className={`left backdrop-blur-md ${theme === 'dark' ? "bg-[#252525]" : "backdrop-blur-md"} shadow-md rounded-full max-sm:bg-transparent h-full ${theme === "dark" ? "max-sm:bg-transparent" : "max-sm:backdrop-blur-0"} flex justify-around items-center  w-6/12 max-md:shadow-none`}>
                 <span onClick={tggleSidebar} className=' p-1 max-sm:text-xl cursor-pointer font-bold text-[#6461B6]'>
                     <Link href='/'>BlogoForCoder</Link>
                 </span>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
             {/* mid section */}
             <div
-                className="max-md:hidden backdrop-blur-md  max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full">
+                className={`max-md:hidden ${theme === 'dark' ? "bg-[#252525]" : "backdrop-blur-md"}   max-md:bg-white/50 text-md font-semibold mid shadow-md rounded-full h-full  flex  justify-around items-center  w-full`}>
                 <Link href='/about'> <span className='cursor-pointer hover:text-purple-500 transition-all duration-300'>
                     About Us
                 </span></Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 
             {/* rightsection */}
-            <div className="right max-md:w-auto  text-md font-semibold shadow-md max-md:shadow-none rounded-full h-full  flex  justify-around items-center  w-6/12">
+            <div className={`righ ${theme === 'dark' ? "bg-[#252525]" : "backdrop-blur-md"} max-md:w-auto  text-md font-semibold shadow-md max-md:shadow-none ${theme === "dark" ? "max-sm:bg-transparent" : "max-sm:backdrop-blur-0"}  rounded-full h-full  flex  justify-around items-center  w-6/12`}>
                 <span onClick={tggleSidebar} id={styles.burger} className='p-1 cursor-pointer hover:text-purple-500 transition-all duration-300'><GiHamburgerMenu size={26} /> </span>
                 <Link href="signup">   <span className='max-md:hidden cursor-pointer hover:text-purple-500 transition-all duration-300'>
                     Sign Up

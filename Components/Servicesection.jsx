@@ -4,8 +4,9 @@ import front from "../public/front.png"
 import back from "../public/back.jpg"
 import fullstack from "../public/fullstack.png"
 import { motion } from 'framer-motion'
-
+import { useTheme } from 'next-themes'
 const Servicesection = () => {
+    const { theme } = useTheme()
     const services = [
         {
             title: "Front End Development",
@@ -37,7 +38,7 @@ const Servicesection = () => {
                             transition={{ duration: 1.2 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            key={index} className="service-card max-lg:grid-cols-1 max-lg:w-3/4 max-md:w-3/4  max-md:h-auto w-auto h-auto m-2 shadow-sm shadow-purple-700 grid grid-cols-3 gap-2 p-2 ">
+                            key={index} className={`service-card max-lg:grid-cols-1 max-lg:w-3/4 max-md:w-3/4  max-md:h-auto w-auto h-auto m-2 shadow-sm  ${theme === "dark" ? "shadow-purple-600" : "shadow-purple-300"} grid grid-cols-3 gap-2 p-2 `}>
                             <div className="left-section-information col-span-2 ">
                                 <h4 className='text-2xl text-center font-bold text-[#6461B6]'>{service?.title}</h4>
                                 <p className='text-lg max-md:text-base capitalize h-40 max-md:h-auto flex justify-center items-center text-center'>{service?.content.slice(0, 550)}...</p>
