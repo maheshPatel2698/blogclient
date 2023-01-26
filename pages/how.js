@@ -2,8 +2,9 @@ import React from 'react'
 import computer from "../public/computer.jpg"
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Image from 'next/image'
-
+import { useRouter } from "next/router"
 const how = () => {
+    const router = useRouter()
     return (
         <div className='blogs-section  w-full h-full p-2  grid grid-cols-1'>
             <div className="blog-card-section flex justify-center items-center flex-col ">
